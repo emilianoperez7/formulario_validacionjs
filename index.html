@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <title>CONTACTANOS</title>
+</head>
+<body>
+  <div>
+    <h1 class="ancho margen centrar">FORMULARIO - CONTACTANOS</h1>
+  </div>
+   <div class="contenedor_formulario ancho margen">
+    <div class="etiquetas">
+      <label for="nombre">Nombre: </label>
+      <br>
+      <label for="email">Email: </label>
+      <br>
+      <label for="telefono">Telefono: </label>
+      <br>
+      <label for="fecha">Fecha: </label>
+      <br>
+      <label for="comentarios">Comentarios: </label>
+    </div>
+    <div class="entradas">
+      <form action="" method="get" id="#formulariocomentarios"></form>
+      <input type="text" name="nombre" id="nombre">
+      <br>
+      <input type="email" name="email" id="email">
+      <br>
+      <input type="tel" name="telefono" id="telefono" placeholder="Ejem:9991234567">
+      <br>
+      <input type="date" name="fecha" id="fecha">
+      <br>
+      <textarea name="comentarios" id="comentarios"></textarea>
+      <button class="boton centrar" type="button" id="btn_validar">Enviar comentario</button>
+    </div>
+  </div>
+  <script>
+    //validar comentario
+    $("#btn_validar").click(function(){
+      if($("#nombre").val().trim() ==  ''){
+        alert("Escribe tu nombre");
+        $("#nombre").focus();
+        return 0; 
+      }
+      if($("#fecha").val().trim() ==  ''){
+        alert("Elige una fecha");
+        $("#fecha").focus();
+        return 0; 
+      }
+      if($("#comentarios").val().trim() ==  ''){
+        alert("Escribe tus comentarios");
+        $("#comentarios").focus();
+        return 0; 
+      }
+
+      $("#formulariocomentarios").submit();
+    });
+  </script>
+
+</body>
+</html>

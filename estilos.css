@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho{
+  max-width: 1200px;
+}
+.margen{
+  padding: 15px 20px;
+}
+.centrar{
+  text-align: center;
+  margin: auto;
+}
+.contenedor_formulario{
+  background-color: #cecece;
+  margin: auto;
+  border-radius: 10px;
+}
+.etiquetas{
+  /* border: 1px red solid; */
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  text-align: right;
+  line-height: 30px;
+  padding-right: 10px;
+}
+.entradas{
+  /* border: 1px blue solid; */
+  display: inline-block;
+  vertical-align: top;
+  width: 84%;
+}
+.entradas input:focus ,
+textarea:focus{
+  background-color: aliceblue;
+}
+.entradas input{
+  width: 70%;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  margin: 2px;
+}
+.entradas textarea{
+  width: 70%;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  margin: 2px;
+}
+.boton{
+  background-color: #800000;
+  width: 70%;
+  height: 34px;
+  text-align: center;
+  color: white;
+  border: 1px gray solid;
+  border-radius: 5px;
+  font-weight: bold;
+}
